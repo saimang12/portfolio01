@@ -1,0 +1,33 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.header .inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 80px;
+    justify-content: space-between;
+}
+
+.header .inner h1 img {
+    width: 170px;
+    height: 80px;
+}
+
+.header .gnb ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header .util ul {
+    display: flex;
+    gap: 10px;
+}
+
+.header .util ul li {
+    font-size: 25px;
+}

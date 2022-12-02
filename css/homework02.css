@@ -404,32 +404,6 @@
     margin: 0 0 0 -650px;
 }
 
-/* .subContents .inner .slick-dots {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, 200%);
-
-}
-
-.subContents .inner .slick-dots li {
-    display: inline-block;
-    padding: 7px;
-    margin: 5px 10px;
-    font-size: 0;
-    background: #444;
-    border-radius: 50%;
-}
-
-.subContents .inner .slick-dots li>button {
-    display: none;
-}
-
-.subContents .slick-dots>li.slick-active {
-    background: tomato;
-} */
-
-
 .subContents figure {
     background: #fff;
     margin: 0 15px;
