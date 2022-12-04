@@ -1,0 +1,3 @@
+$('.mainSlide').slick({
+    // arrows:false,
+})
