@@ -1,3 +1,7 @@
+.Wrap {
+    height: 1000px;
+}
+
 .header .inner {
     display: flex;
     width: 1200px;
@@ -27,41 +31,144 @@
 
 
 /* header } */
-
 /* { mainVisual */
 
-
 .mainVisual {
-    background: url(../img02/car-bg-w.webp) no-repeat center bottom/cover;
+    background: url(../img02/car-bg-w.webp) no-repeat center center/cover;
+    position: relative;
 }
 
-.mainVisual .inner h2 {
-    font-size: 70px;
+.mainVisual .mainSlide {
+    position: relative;
+}
+
+.mainVisual .mainSlide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    border: none;
+    font-size: 0;
+
+    width: 40px;
+    height: 40px;
+
+    border-top: 3px solid #333;
+    border-right: 3px solid #333;
+
+    background: none;
+    cursor: pointer;
+}
+
+.mainVisual .mainSlide .slick-prev {
+    margin: 0 0 0 -700px;
+    transform: rotate(-135deg);
+}
+
+.mainVisual .mainSlide .slick-next {
+    margin: 0 0 0 700px;
+    transform: rotate(45deg);
+}
+
+.mainVisual .mainSlide .slick-dots {
+    padding: 20px 0;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mainVisual .mainSlide .slick-dots li {
+    display: inline-block;
+    margin: 0 15px;
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: tomato;
+
+    cursor: pointer;
+}
+
+.mainVisual .controler {
+    position: absolute;
+    bottom: 125px;
+    left: 60%;
+}
+
+.mainVisual .controler button {
+    border: none;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 20px;
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mainVisual .mainSlide .slick-dots .slick-active {
+    background: #333;
+}
+
+.mainVisual .mainSlide .slick-dots li button {
+    visibility: hidden;
+}
+
+
+
+.mainVisual .mainSlide figure {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainVisual .mainSlide h2 {
+    width: 1200px;
+    margin: 0 auto 30px auto;
+    padding: 30px 0 0 0;
+    font-size: 60px;
     font-weight: 700;
-    margin: 40px 0;
 }
 
-.mainVisual .inner p {
-    font-size: 25px;
-}
-
-.mainVisual .mainSlide .item01 .inner {
+.mainVisual .mainSlide p {
     width: 1200px;
     margin: 0 auto;
-    height: 800px;
-    background: url(../img02/slide01.webp) no-repeat center center/contain;
+    font-size: 30px;
+    font-weight: 500;
 }
 
-.mainSlide .item02 .inner {
-    width: 1200px;
+.mainVisual .mainSlide img {
+    opacity: 0;
     margin: 0 auto;
-    height: 800px;
-    background: url(../img02/slide02.webp) no-repeat center center/contain;
+    transform: translate(200%, 0);
 }
 
-.mainSlide .item03 .inner {
-    width: 1200px;
+.mainVisual .mainSlide .slick-active img {
+    opacity: 1;
+    transition: 1.5s;
+    transform: translate(0, 0);
+}
+
+.mainVisual .icon {
+    width: 100vw;
     margin: 0 auto;
-    height: 800px;
-    background: url(../img02/slide03.webp) no-repeat center center/contain;
+    padding: 20px 0;
+}
+
+.mainVisual .icon ul {
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mainVisual .icon ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.mainVisual .icon ul li img {
+    width: 50px;
+    height: 50px;
 }
