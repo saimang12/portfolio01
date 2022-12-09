@@ -1,0 +1,96 @@
+.header {
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 999;
+}
+
+.header .inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header .inner img {
+    width: 150px;
+    height: 40px;
+}
+
+.header .gnb {
+    margin: 0 auto;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header .inner .headIcon {
+    font-size: 25px;
+}
+
+.header .inner .headIcon i {
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.mainVisual .video_box {
+    width: 100vh;
+    height: 100vh;
+    position: relative;
+}
+
+.mainVisual video {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+
+
+.mainVisual .main_txt {
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+    z-index: 999;
+}
+
+.mainVisual .main_txt h2 {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+.mainVisual .main_txt p {
+    font-size: 20px;
+}
+
+.mainVisual .arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 55px;
+    transform: translate(-50%, 0);
+    padding: 20px;
+    font-size: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.mainVisual .arrow i {
+    display: block;
+    line-height: 10px;
+}
+
+.mainContents {
+    height: 200vh;
+}
