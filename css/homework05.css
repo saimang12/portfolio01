@@ -1,0 +1,141 @@
+.topBar {
+    line-height: 80px;
+    background: #ced8d7;
+    text-align: center;
+}
+
+.topBar.on {
+    display: none;
+}
+
+.topBar figure {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.topBar figure img {
+    width: 1200px;
+}
+
+.topBar i {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header .htop_inner {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.header .head_contents {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.header .head_contents h1 {
+    font-size: 0;
+}
+
+.header .head_contents h1 span {
+    font-size: 16px;
+    margin: 0 0 0 15px;
+    vertical-align: middle;
+}
+
+.header .head_contents h1 img {
+    height: 50px;
+}
+
+.header .head_contents ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.header .head_contents ul li a {
+    display: block;
+}
+
+.header .head_contents ul li img {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 10px 0;
+}
+
+.header .head_contents ul span {
+    font-size: 14px;
+    display: block;
+}
+
+
+
+.header .hbot_inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    line-height: 50px;
+}
+
+.header .hbot_inner .gnb {
+    display: flex;
+}
+
+.header .hbot_inner .gnb ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header .hbot_inner .gnb ul>li {
+    font-weight: 500;
+}
+
+.header .hbot_inner .gnb ul li a {
+    display: block;
+}
+
+.header .hbot_inner .hbot_icon {
+    position: relative;
+    margin: 0 20px 0 0;
+}
+
+.header .hbot_inner .hbot_icon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 20px;
+    background: #ddd;
+}
+
+.header .hbot_inner .hbot_icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 20px;
+    background: #ddd;
+}
+
+.header .hbot_inner .hbot_icon input {
+    border: none;
+    border-bottom: 1px solid #444;
+}
+
+.header .hbot_inner .hbot_icon i {
+    font-size: 20px;
+}
